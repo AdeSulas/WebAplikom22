@@ -1,0 +1,329 @@
+/* header */
+.header {
+    overflow: hidden;
+    transition: 1s;
+    position: fixed;
+    width: 100%;
+    padding-left: 20px;
+    background-color: black;
+    z-index: 99;
+}
+.header h3 {
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    
+}
+/* bagian navbar */
+
+.nav {
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+    width: 100%;
+}
+.nav li {
+    color: white;
+    list-style: outside none none;
+    display: inline;
+}
+
+.nav a {
+    padding: .5em .8em;
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav a::before,
+.nav a::after {
+    content: '';
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #995523;
+    border-right: 3px solid #DE9157;
+    transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-left: 3px solid #DE9157;
+    border-bottom: 3px solid #995523;
+    transform: translate(100%, -50%);
+}
+.nav a:hover:before,
+.nav a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.sticky a:hover {
+    color: #DE9157;
+    list-style-type: none;
+}
+
+
+
+/* bg img home */
+.bgimg{
+    overflow: hidden;
+    transition: 0.5s;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    height: 600px;
+    
+}
+.content{
+   position: sticky;
+   z-index: -1;
+}
+
+
+/* materi */
+#Materi h2{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.logo1 {
+    position: sticky;
+    padding-top: 80px;
+    padding-bottom: 40px;
+   
+}
+
+.logo2 {
+    position: sticky;
+    
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+/* materi windows */
+.windows iconify-icon {
+    color: #00ADEF;
+    font-size: 100px;
+}
+.windows button:hover{
+    background-color: #DE9157;
+    color: white;
+}
+.windows button{
+    border-radius: 5px;
+    border: none;
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.windows p{
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* materi word */
+.word iconify-icon {
+    color: #2A5699;
+    font-size: 100px;
+}
+
+.word p{
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.word button:hover{
+    background-color: #DE9157;
+    color: white;
+}
+.word button{
+    border-radius: 5px;
+    border: none;
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* materi excel */
+.excel iconify-icon {
+    color: #207245;
+    font-size: 100px;
+}
+.excel p {
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.excel button:hover{
+    background-color: #DE9157;
+    color: white;
+}
+.excel button{
+    border-radius: 5px;
+    border: none;
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* materi ppt */
+.ppt iconify-icon {
+    color: #CA4A31;
+    font-size: 100px;
+}
+.ppt button:hover{
+    background-color: #DE9157;
+    color: white;
+}
+.ppt button{
+    border-radius: 5px;
+    border: none;
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.ppt p {
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* website */
+.web iconify-icon {
+    color: #007ACC;
+    font-size: 100px;
+}
+.web button:hover{
+    background-color: #DE9157;
+    color: white;
+}
+.web button{
+    border-radius: 5px;
+    border: none;
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.web p{
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* videografi */
+.videografi iconify-icon {
+    font-size: 100px;
+}
+.videografi button:hover{
+    background-color: #DE9157;
+    color: white;
+}
+.videografi button{
+    border-radius: 5px;
+    border: none;
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.videografi p {
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* kontak 1 dan 2*/
+#TentangSaya {
+    padding-top: 80px;
+    background-color: #f6f6f6;
+}
+
+.kontak h1 {
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.lonjong {
+    width: 100px;
+    height: 15px;
+    border-radius: 40px;
+    background-color: #DE9157;
+    margin-left: 30px;
+}
+
+.kontak p {
+    padding-left: 30px;
+    padding-right: 310px;
+}
+
+.kontak h2 {
+    padding-left: 30px;
+    padding-right: 310px;
+    text-align: left;
+}
+
+ 
+.main1{
+    padding-top: 20px;
+    padding-left: 15px;
+    background-color: #f6f6f6;
+}
+
+footer iconify-icon {
+    font-size: 15px;
+}
+
+/* gambar tentang saya */
+
+.gambar1 h2{
+   font-weight: bold;
+}
+.gambar1 p{
+    padding-left: 50px;
+}
+.gambar1 img {
+    width: 30%;
+    float: right;
+    padding-right: 50px;
+    
+}
+.pendidikan h2{
+    font-weight: bold;
+}
+ 
+.pendidikan img {
+    width: 30%;
+    border-radius: 50px;
+}
